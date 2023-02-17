@@ -14,7 +14,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        label = "BÉPO";
+                        label = "BEPO";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  B  |  É  |  P  |  O  |  È  |   |  ^  |  V   |  D  |  L  |  J  | BKSP |
 // | CTRL |  A  |  U  |  I  |  E  |  ;  |   |  C  |  T   |  S  |  R  |  N  |  M   |
