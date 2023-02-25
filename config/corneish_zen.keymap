@@ -17,22 +17,22 @@
 
 #define COMBO(name, keypress, keypos) \
 combo_##name {                        \
-	timeout-ms = <30>;                  \
-	bindings = <keypress>;              \
-	key-positions = <keypos>;           \
+	timeout-ms = <30>;            \
+	bindings = <keypress>;        \
+	key-positions = <keypos>;     \
 };
 
 / {
-	combos {
-		compatible = "zmk,combos";
+    combos {
+      compatible = "zmk,combos";
     // left hand
-    COMBO(delete, &kp DELETE, 4 5)
-    COMBO(enter_left, &kp RET, 16 17)
-    COMBO(f5, &kp F5, 28 29)
+    COMBO(delete, &kp DELETE, 13 5)
+    COMBO(enter_left, &kp RET, 13 17)
+    COMBO(f5, &kp F5, 13 29)
     // right hand
-    COMBO(w, &kp RBKT, 6 7)
-    COMBO(back_space, &kp BSPC, 18 19)
-    COMBO(windows, &kp LGUI, 30 31)
+    COMBO(w, &kp RBKT, 6 22)
+    COMBO(back_space, &kp BSPC, 18 22)
+    COMBO(windows, &kp LGUI, 30 22)
 	};        
 };
 
