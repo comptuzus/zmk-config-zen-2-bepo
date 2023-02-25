@@ -9,11 +9,32 @@
   };
 };
 
-/* Key index for macro
+/* Key index for combo
  0  1  2  3  4  5    6  7  8  9 10 11
 12 13 14 15 16 17   18 19 20 21 22 23
 24 25 26 27 28 29   30 31 32 33 34 35
          36 37 38   39 40 41     */
+
+#define COMBO(name, keypress, keypos) \
+combo_##name {                        \
+	timeout-ms = <30>;                  \
+	bindings = <keypress>;              \
+	key-positions = <keypos>;           \
+};
+
+/ {
+	combos {
+		compatible = "zmk,combos";
+    // left hand
+    COMBO(delete, &kp DELETE, 4 5)
+    COMBO(enter_left, &kp RET, 16 17)
+    COMBO(f5, &kp F5, 28 29)
+    // right hand
+    COMBO(w, &kp RBKT, 6 7)
+    COMBO(back_space, &kp BSPC, 18 19)
+    COMBO(windows, &kp LGUI, 30 31)
+	};        
+};
 
 / {
         keymap {
