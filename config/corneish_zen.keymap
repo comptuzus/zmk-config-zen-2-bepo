@@ -53,6 +53,13 @@ combo_##name {                        \
             tapping-term-ms = <200>;
             bindings = <&kp RSHIFT>, <&kp RCTRL>;
         };
+        td_gr: tap_dance_gui_right {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_MOD_TAP";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RALT>, <&kp RGUI>;
+        };
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -68,7 +75,7 @@ combo_##name {                        \
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U  &kp I     &kp O   &kp P    &kp LBKT
    &kp ESC   &kp A &kp S &kp D &kp F &kp G    &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &td_sl    &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &td_sr
-                   &mo 1 &lt 1 SPACE &kp BSPC   &kp RALT &lt 2 RET &mo 1
+                   &mo 1 &lt 1 SPACE &kp BSPC   &td_gr &lt 2 RET &mo 1
                         >;
                 };
                 lower_layer {
