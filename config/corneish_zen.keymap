@@ -41,21 +41,21 @@ combo_##name {                        \
     behaviors {
         td_sl: tap_dance_shift_left {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MOD_TAP";
+            label = "TAP_DANCE_shift_left";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LSHIFT>, <&kp LCTRL>;
         };
         td_sr: tap_dance_shift_right {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MOD_TAP";
+            label = "TAP_DANCE_shift_right";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp RSHIFT>, <&kp RCTRL>;
         };
         td_gr: tap_dance_gui_right {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MOD_TAP";
+            label = "TAP_DANCE_right_alt";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp RALT>, <&kp RGUI>;
