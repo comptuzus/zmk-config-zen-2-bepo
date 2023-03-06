@@ -1,7 +1,17 @@
 # Corne-ish Zen V2 Custom Configuration
 
 ![Corne-ish Zen Logo](img/Zen_R3_sticker.png)
-
+```
+╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+| tab         | b           | é           | p           | o        è  |   | ^           | v           | d           | l           | j         z |
+├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+| &am LCTRL A   &am LGUI R    &am LALT S    &as LSHFT T   &kp G             &kp M         &as RSHFT N   &am RALT E    &am RGUI I    &am RCTRL O
+├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+| &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
+╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                             &mt LGUI TAB  &mt LCTRL ESC &lt_bspc NAV 0    &lt SYM SPACE &mt RSHFT RET &mt RALT DEL
+                            ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+```
 **NOTE: This code is currently merged into ZMK Main.**
 
 This repo is the official configuration of the Corne-ish Zen V2 low profile wireless mechanical keyboard. Use it to develop your own keymap and easily build your own ZMK firmware to run on your Corne-ish Zen. These steps will get you using your keymap on your keyboard in the fastest time possible. It uses the GitHub Actions feature to build your firmware online, rather than setting up a complex tool chain on your local computer.
