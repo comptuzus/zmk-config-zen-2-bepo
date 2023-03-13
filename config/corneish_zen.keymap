@@ -17,7 +17,7 @@
 
 #define COMBO(name, keypress, keypos) \
 combo_##name {                        \
-	timeout-ms = <30>;            \
+	timeout-ms = <50>;            \
 	bindings = <keypress>;        \
 	key-positions = <keypos>;     \
 };
@@ -26,7 +26,7 @@ combo_##name {                        \
     combos {
       compatible = "zmk,combos";
       // left hand
-      COMBO(delete, &kp DELETE, 13 5)
+      COMBO(delete, &kp DELETE, 15 16)
       COMBO(enter_left, &kp RET, 13 17)
       COMBO(f5, &kp F5, 13 29)
       // right hand
@@ -70,12 +70,12 @@ combo_##name {                        \
 // |  TAB |  B  |  É  |  P  |  O  |  È   |    |  ^  |  V   |  D  |  L  |  J  |  Z   |
 // | ESC  |  A  |  U  |  I  |  E  |  ;   |    |  C  |  T   |  S  |  R  |  N  |  M   |
 // | SHFT |  À  |  Y  |  X  |  :  |  K   |    |  ?  |  Q   |  G  |  H  |  F  | SHFT |
-//                    | LWR | SPC&LWR | PKSP |   | ALT | ENT&RSE | LWR |
+//                    | ALT | SPC | PKSP |   | ALT | ENT&RSE | LWR |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U  &kp I     &kp O   &kp P    &kp LBKT
    &kp ESC   &kp A &kp S &kp D &kp F &kp G    &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &td_sl    &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &td_sr
-                   &mo 1 &lt 1 SPACE &kp BSPC   &td_gr &lt 2 RET &mo 1
+                   &kp LALT &kp SPACE &kp BSPC   &td_gr &lt 2 RET &mo 1
                         >;
                 };
                 lower_layer {
