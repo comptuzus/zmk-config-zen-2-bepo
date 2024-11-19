@@ -33,6 +33,11 @@ combo_##name {                        \
       COMBO(w, &kp RBKT, 6 22)
       COMBO(back_space, &kp BSPC, 18 22)
       COMBO(windows, &kp LGUI, 30 22)
+      // left and right hand
+      COMBO(BT1, &bt BT_SEL 0, 1 30)
+      COMBO(BT2, &bt BT_SEL 1, 2 30)
+      COMBO(BT3, &bt BT_SEL 2, 3 30)
+      COMBO(BT4, &bt BT_SEL 3, 4 30)
     };
   };
 
@@ -79,22 +84,22 @@ combo_##name {                        \
                         >;
                 };
                 lower_layer {
-                        label = "MOVE";
+                        label = "LOWER";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  "  |  «  |  »  |  (   |  )  |   |  @  |  +  |  -  |  /  |  *  |  =   |
-// | BTCLR| BT1 | BT2 | BT3 | BT4  |     |   | LFT | DWN |  UP | RGT |     |      |
+// | BTCLR|     |     |     |      |     |   | LFT | DWN |  UP | RGT |     |      |
 // | SHFT |     |     |     |      |     |   |     |     |     |     |     |      |
 //                    |     | SPC | PKSP |   | ALT | ENT  |    |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5   &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp MINUS
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &trans   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans   &trans   &trans   &trans &trans    &trans &trans
+   &kp TAB    &kp N1   &kp N2   &kp N3   &kp N4     &kp N5   &kp N6   &kp N7  &kp N8    &kp N9  &kp N0
+   &bt BT_CLR &trans   &trans   &trans   &trans     &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans  &trans
+   &kp LSHFT  &trans   &trans   &trans   &trans     &trans   &trans   &trans  &trans    &trans  &trans
                   &trans &kp SPACE &kp BSPC   &kp RALT &kp RET &trans
                         >;
                 };
 
                 raise_layer {
-                        label = "NUMBER";
+                        label = "RAISE";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4   |  5  |   |  6  |  7  |  8  |  9  |  0  |  °   |
 // | ESC  |     |     |     |      |     |   |  =  |  %  |  z  |  w  |  ç  |  $   |
@@ -102,9 +107,9 @@ combo_##name {                        \
 // | SHFT |     |     |     |      |     |   |  °  |  `  |  Z  |  W  |  Ç  |  #   |
 //                    |     | SPC | PKSP |   | ALT | ENT  |    |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR  &kp PRCNT &kp CARET &kp AMPS  &kp STAR &kp LPAR &kp RPAR &kp UNDER
-   &kp ESC   &trans   &trans &trans   &trans    &trans    &kp BSLH &kp RBKT &kp MINUS &kp EQUAL &kp LBKT &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans    &trans    &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE &kp TILDE
+   &kp TAB   &kp EXCL &kp AT &kp HASH &kp DLLR  &kp PRCNT &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR &kp UNDER
+   &kp ESC   &trans   &trans &trans   &trans    &trans    &kp BSLH  &kp RBKT  &kp MINUS &kp EQUAL &kp LBKT &kp GRAVE
+   &kp LSHFT &trans   &trans &trans   &trans    &trans    &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE &kp TILDE
                       &trans &kp SPACE &kp BSPC   &kp RALT &kp RET &trans
                         >;
                 };
