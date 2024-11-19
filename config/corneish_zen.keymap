@@ -28,7 +28,6 @@ combo_##name {                        \
       // left hand
       COMBO(delete, &kp DELETE, 15 16)
       COMBO(enter_left, &kp RET, 13 17)
-      COMBO(f5, &kp F5, 13 29)
       // right hand
       COMBO(w, &kp RBKT, 6 22)
       COMBO(back_space, &kp BSPC, 18 22)
