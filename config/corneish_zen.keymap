@@ -82,28 +82,28 @@ combo_##name {                        \
                 default_layer {
                         label = "BEPO";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  B  |  É  |  P  |  O  |  È   |    |  ^  |  V   |  D  |  L  |  J  |  Z   |
+// | TAB  |  B  |  É  |  P  |  O  |  È   |    |  ^  |  V   |  D  |  L  |  J  |  Z   |
 // | ESC  |  A  |  U  |  I  |  E  |  ;   |    |  C  |  T   |  S  |  R  |  N  |  M   |
-// | SHFT |  À  |  Y  |  X  |  :  |  K   |    |  ?  |  Q   |  G  |  H  |  F  | SHFT |
-//                    | ALT | SPC | PKSP |   | ALT | ENT&RSE | LWR |
+// | SHFT |  w  |  Y  |  X  |  :  |  K   |    |  ?  |  Q   |  G  |  H  |  F  | SHFT |
+//                    | ALT | SPC | PKSP |    |RALT | ENT&RSE | LWR |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U  &kp I     &kp O   &kp P    &kp LBKT
-   &kp ESC   &kp A &kp S &kp D &kp F &kp G    &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &td_sl    &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &td_sr
+   &kp TAB   &kp Q    &kp W &kp E &kp R &kp T    &kp Y &kp U  &kp I     &kp O   &kp P    &kp LBKT
+   &kp ESC   &kp A    &kp S &kp D &kp F &kp G    &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &td_sl    &kp BSLH &kp X &kp C &kp V &kp B    &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &td_sr
                    &kp LALT &kp SPACE &kp BSPC   &td_gr &lt 2 RET &mo 1
                         >;
                 };
                 lower_layer {
                         label = "LOWER";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  "  |  «  |  »  |  (   |  )  |   |  @  |  +  |  -  |  /  |  *  |  =   |
-// | BTCLR|     |     |     |      |     |   | LFT | DWN |  UP | RGT |     |      |
+// | TAB  |  "  |  «  |  »  |  (   |  )  |   |  @  |  +  |  -  |  /  |  *  |  =   |
+// | BTCLR|     |HOME |PGDWN| PGUP | END |   | LFT | DWN |  UP | RGT |     |      |
 // | SHFT |     |     |     |      |     |   |     |     |     |     |     |      |
-//                    |     | SPC | PKSP |   | ALT | ENT  |    |
+//                    |     | SPC  | PKSP|   |RALT | ENT |     |
                         bindings = <
-   &kp TAB    &kp N1   &kp N2   &kp N3   &kp N4  &kp N5   &kp N6   &kp N7  &kp N8    &kp N9  &kp N0   &kp MINUS
-   &bt BT_CLR &trans   &trans   &trans   &trans  &trans   &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans  &trans
-   &kp LSHFT  &trans   &trans   &trans   &trans  &trans   &trans   &trans   &trans  &trans    &trans  &trans
+   &kp TAB    &kp N1   &kp N2   &kp N3    &kp N4    &kp N5   &kp N6   &kp N7  &kp N8    &kp N9  &kp N0   &kp MINUS
+   &bt BT_CLR &trans   &kp HOME &kp PG_DN &kp PG_UP &kp END  &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans  &trans
+   &kp LSHFT  &trans   &trans   &trans    &trans    &trans   &trans   &trans   &trans  &trans    &trans  &trans
                   &trans &kp SPACE &kp BSPC   &kp RALT &kp RET &trans
                         >;
                 };
@@ -111,15 +111,15 @@ combo_##name {                        \
                 raise_layer {
                         label = "RAISE";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4   |  5  |   |  6  |  7  |  8  |  9  |  0  |  °   |
-// | ESC  |     |     |     |      |     |   |  w  |  w  |  =  |  %  |  z  |  $   |
-// | SHFT |     |     |     |      |     |   |  °  |  `  |  Z  |  W  |  ç  |  #   |
-//                    |     | SPC | PKSP |   | ALT | ENT  |    |
+// | $    |  1  |  2  |  3  |  4   |  5  |   |  6  |  7  |  8  |  9  |  0  |  °   |
+// | ESC  |  à  |     |     |      |     |   |  ç  |     |     |     |     |  %   |
+// | SHFT |     |     |     |      |     |   |     |     |     |     |     |      |
+//                    |     | SPC  | PKSP|   | RALT| ENT |     |
                         bindings = <
-   &kp TAB   &kp EXCL &kp AT &kp HASH &kp DLLR  &kp PRCNT &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR &kp UNDER
-   &kp ESC   &trans   &trans &trans   &trans    &trans    &kp RBKT  &kp RBKT  &kp MINUS &kp EQUAL &kp LBKT &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans    &trans    &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC  &kp BSLH &kp TILDE
-                      &trans &kp SPACE &kp BSPC   &kp RALT &kp RET &trans
+   &kp GRAVE &kp EXCL &kp AT &kp HASH &kp DLLR  &kp PRCNT &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &kp UNDER
+   &kp ESC   &kp Z    &trans &trans   &trans    &trans    &kp BSLH  &trans   &trans   &trans   &trans   &kp EQUAL
+   &kp LSHFT &trans   &trans &trans   &trans    &trans    &trans    &trans   &trans   &trans   &trans   &trans
+                       &trans &kp SPACE &kp BSPC   &kp RALT &kp RET &trans
                         >;
                 };
         };
