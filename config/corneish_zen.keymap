@@ -89,7 +89,7 @@ combo_##name {                        \
                         bindings = <
    &kp TAB   &kp Q    &kp W &kp E &kp R &kp T    &kp Y &kp U  &kp I     &kp O   &kp P    &kp LBKT
    &kp ESC   &kp A    &kp S &kp D &kp F &kp G    &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &td_sl    &kp BSLH &kp X &kp C &kp V &kp B    &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &td_sr
+   &td_sl    &kp RBKT &kp X &kp C &kp V &kp B    &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &td_sr
                    &kp LALT &kp SPACE &kp BSPC   &td_gr &lt 2 RET &mo 1
                         >;
                 };
