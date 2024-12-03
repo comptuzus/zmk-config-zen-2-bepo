@@ -41,10 +41,9 @@ combo_##name {                        \
       compatible = "zmk,combos";
       // left hand
       COMBO(delete, &kp DELETE, 15 16)
-      COMBO(enter_left, &kp RET, 13 17)
+      COMBO(enter_left, &kp RET, 13 16)
       // right hand
       COMBO(w, &kp RBKT, 6 22)
-      COMBO(back_space, &kp BSPC, 18 22)
       COMBO(windows, &kp LGUI, 30 22)
       // left and right hand
       COMBO(BT1, &bt BT_SEL 0, 1 30)
@@ -68,12 +67,11 @@ combo_##name {                        \
 / {
 
     behaviors {
-        td_sl: tap_dance_shift_left {
+        td_cl: tap_dance_shift_left {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_shift_left";
-            #binding-cells = <0>;
+            label = "TAP_DANCE_shift_left"; 
             tapping-term-ms = <200>;
-            bindings = <&kp LSHIFT>, <&kp LCTRL>;
+            bindings = <&kp LCTRL>, <&kp LSHFT>;
         };
         td_sr: tap_dance_shift_right {
             compatible = "zmk,behavior-tap-dance";
@@ -102,8 +100,8 @@ combo_##name {                        \
 //                     | ALT | SPC | PKSP |    |RALT |ENT&RSE| LWR |
                         bindings = <
    &kp TAB       &kp Q    &kp W &kp E    &kp R     &kp T    &kp Y  &kp U     &kp I     &kp O   &kp P    &kp LBKT
-   &mt LCTRL ESC &kp A    &kp S &kp D    &kp F     &kp G    &kp H  &kp J     &kp K     &kp L   &kp SEMI &kp SQT
-   &td_sl        &kp RBKT &kp X &kp C    &kp V     &kp B    &kp N  &kp M     &kp COMMA &kp DOT &kp FSLH &td_sr
+   &mt LSHIFT ESC &kp A    &kp S &kp D    &kp F     &kp G    &kp H  &kp J     &kp K     &kp L   &kp SEMI &kp SQT
+   &td_cl        &kp RBKT &kp X &kp C    &kp V     &kp B    &kp N  &kp M     &kp COMMA &kp DOT &kp FSLH &td_sr
                                 &kp LALT &kp SPACE &kp BSPC &td_gr &lt 2 RET &mo 1
                         >;
                 };
