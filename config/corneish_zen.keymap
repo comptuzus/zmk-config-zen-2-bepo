@@ -69,7 +69,8 @@ combo_##name {                        \
     behaviors {
         td_cl: tap_dance_shift_left {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_shift_left"; 
+            label = "TAP_DANCE_shift_left";
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LCTRL>, <&kp LSHFT>;
         };
