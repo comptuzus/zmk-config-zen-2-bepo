@@ -126,12 +126,12 @@ combo_##name {                        \
 // -----------------------------------------------------------------------------------------
 // | $    |  1  |  2  |  3  |  4   |  5  |   |  6  |  7  |  8  |  9  |  0  |  °   |
 // | ESC  |  à  |     |     |      |     |   |  ç  |     |     |     |     |  %   |
-// | SHFT |     |     |     |      |     |   |     |     |     |     |     |      |
+// | SHFT |  à  |     |     |      |     |   |     |     |     |     |     |      |
 //                    |     | SPC  | PKSP|   | RALT| ENT |     |
                         bindings = <
    &kp GRAVE &kp EXCL &kp AT &kp HASH &kp DLLR  &kp PRCNT &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &kp UNDER
    &kp ESC   &kp Z    &trans &trans   &trans    &trans    &kp BSLH  &trans   &trans   &trans   &trans   &kp EQUAL
-   &kp LSHFT &trans   &trans &trans   &trans    &trans    &trans    &trans   &trans   &trans   &trans   &trans
+   &kp LSHFT &kp Z    &trans &trans   &trans    &trans    &trans    &trans   &trans   &trans   &trans   &trans
                        &trans &bepo_under &kp BSPC   &kp RALT &kp RET &trans
                         >;
                 };
