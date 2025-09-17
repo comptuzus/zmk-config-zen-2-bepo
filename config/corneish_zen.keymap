@@ -95,15 +95,15 @@ combo_##name {                        \
                 default_layer {
                         label = "BEPO";
 // -----------------------------------------------------------------------------------------
-// | TAB   |  B  |  É  |  P  |  O  |  È   |    |  ^  |  V    |  D  |  L  |  J  |  Z   |
-// |ESC&CTR|  A  |  U  |  I  |  E  |  ;   |    |  C  |  T    |  S  |  R  |  N  |  M   |
-// | SHFT  |  w  |  Y  |  X  |  :  |  K   |    |  ?  |  Q    |  G  |  H  |  F  | SHFT |
-//                     | ALT | SPC | PKSP |    |RALT |ENT&RSE| LWR |
+// | TAB   |  B  |  É  |  P  |  O  |  È   |    |  ^    |  V  |  D  |  L  |  J  |  Z   |
+// |ESC&CTR|  A  |  U  |  I  |  E  |  ;   |    |  C    |  T  |  S  |  R  |  N  |  M   |
+// | SHFT  |  w  |  Y  |  X  |  :  |  K   |    |  ?    |  Q  |  G  |  H  |  F  | SHFT |
+//                     | ALT | SPC | PKSP |    |ENT&RSE|RALT | LWR |
                         bindings = <
    &kp TAB       &kp Q    &kp W &kp E    &kp R     &kp T    &kp Y  &kp U     &kp I     &kp O   &kp P    &kp LBKT
    &mt LSHIFT ESC &kp A    &kp S &kp D    &kp F     &kp G    &kp H  &kp J     &kp K     &kp L   &kp SEMI &kp SQT
    &td_cl        &kp RBKT &kp X &kp C    &kp V     &kp B    &kp N  &kp M     &kp COMMA &kp DOT &kp FSLH &td_sr
-                                &kp LALT &kp SPACE &kp BSPC &td_gr &lt 2 RET &mo 1
+                                &kp LALT &kp SPACE &kp BSPC &lt 2 RET &td_gr &mo 1
                         >;
                 };
                 lower_layer {
@@ -117,7 +117,7 @@ combo_##name {                        \
    &kp TAB    &kp N1   &kp N2   &kp N3    &kp N4    &kp N5   &kp N6   &kp N7  &kp N8    &kp N9  &kp N0   &kp MINUS
    &bt BT_CLR &trans   &kp HOME &kp PG_DN &kp PG_UP &kp END  &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans  &trans
    &kp LSHFT  &trans   &trans   &trans    &trans    &trans   &trans   &trans   &trans  &trans    &trans  &trans
-                  &trans &bepo_under &kp BSPC   &kp RALT &kp RET &trans
+                  &trans &bepo_under &kp BSPC   &kp RET &kp RALT &trans
                         >;
                 };
 
@@ -132,7 +132,7 @@ combo_##name {                        \
    &kp GRAVE &kp EXCL &kp AT &kp HASH &kp DLLR  &kp PRCNT &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &kp UNDER
    &kp ESC   &kp Z    &trans &trans   &trans    &trans    &kp BSLH  &trans   &trans   &trans   &trans   &kp EQUAL
    &kp LSHFT &kp Z    &trans &trans   &trans    &trans    &trans    &trans   &trans   &trans   &trans   &trans
-                       &trans &bepo_under &kp BSPC   &kp RALT &kp RET &trans
+                       &trans &bepo_under &kp BSPC   &kp RET &kp RALT &trans
                         >;
                 };
         };
